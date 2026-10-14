@@ -1,50 +1,4 @@
 # METER NLP Procedure Guide
-## Repository Structure
-
-METER/
-├── README.md
-├── src/
-│ ├── main/ # Main pipeline scripts
-│ │ ├── 3_kws_mining_nlp.py # Main entry for keyword mining
-│ │ ├── text_mining_all_abs.py # Core text mining logic
-│ │ └── files_operation.py # File I/O utilities
-│ └── analysis/ # Downstream analysis scripts
-│   ├── 1_drug_hot_terms_match.py # Drug–hot term matching
-│   ├── ppi1_match.py # PPI network matching
-│   ├── ppi2_echarts.py # PPI network visualization
-│   ├── heatmap1_data_to_csv.py # Heatmap data preparation
-│   ├── heatmap2_groups.py # Heatmap grouping
-│   ├── venn_groups.py # Venn diagram grouping
-│   └── score_functions.py # Scoring functions
-├── data/ # Small input and intermediate files
-│ ├── Cela_DE.txt
-│ ├── cela_keyword1002.txt
-│ ├── cela_kw_250828_2.txt
-│ ├── cela_kw_ros.txt
-│ ├── EG_To_ENSP.txt
-│ ├── ITCM_kws_250507.txt
-│ ├── PPI_String_Human_Link_M400_New.txt
-│ ├── PubMed_ID_To_Symbol2026.json
-│ ├── Salvianolic acid B_DEGs.txt
-│ ├── Symbol_2_PMID_2026.hao
-│ ├── Symbol_PMID_Count_2026.txt
-│ ├── Symbol_To_EG.txt
-│ └── Symbol_To_PubMed_ID2026.json
-└── METER_large_files/ # Large files (not included in this repo)
-  ├── lexical library/
-  ├── ABS.zip
-  ├── Mesh_Data.zip
-  ├── METER_V2_ECharts_Generate.exe
-  └── PM_NLP0329.zip
-
-### Data
-
-Large files are not included in this repository due to GitHub size limits.
-Please download them from Baidu Netdisk and place them in the `METER/` folder:
-
-- Link: https://pan.baidu.com/s/1uEnPLWrEQQxenMnHfaSklw?pwd=7uh6 
-- Extraction code: 7uh6
-# METER NLP Procedure Guide
 
 ## Repository Structure
 
@@ -113,13 +67,6 @@ Go to the METER folder (`METER_main_procedure_NLP`) and unzip:
 - `lexical library/` — cached mining results (keywords, gene IDs, DE ratios). 
   It will be automatically generated when running the code, but you can also 
   download the pre-built cache from Baidu Netdisk to save time.
-
-## STEP 1: Prepare METER Folder
-
-Go to the METER folder (`METER_main_procedure_NLP`) and unzip:
-
-- `PM_NLP0329.zip`
-- `Mesh_Data.zip`
 
 ## STEP 2: Install Dependencies
 
