@@ -41,7 +41,7 @@ METER/
 ### Data
 
 Large files are not included in this repository due to GitHub size limits.
-Please download them from Baidu Netdisk and place them in the `METER/` folder:
+Please download them from Baidu Netdisk and place them in the `METER_large_files/` folder:
 Files to download:
 
 - Link: https://pan.baidu.com/s/1uEnPLWrEQQxenMnHfaSklw?pwd=7uh6 
